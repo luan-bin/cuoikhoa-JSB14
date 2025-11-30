@@ -1,0 +1,58 @@
+.navbar {
+  background-color: #120f22 !important;
+  color: #fff !important;
+}
+
+.name-game{
+    font-size: 60px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.text-muted{
+    color: #6b7280 !important;
+    font-size: 15px;
+}
+
+.tag{
+    font-size: 15px;
+    padding: 2px 8px;
+    background: #eef2ff;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #4f46e5;
+    margin-right: 8px;
+}
+.type{
+    font-size: 15px;
+    padding: 2px 8px;
+    background: #d1fae5;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #10b981;
+}
+
+.price-old{
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 14px;
+}
+.price-new{
+    color: rgb(0, 128, 0);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.game-img {
+    width: 400px;
+    border-radius: 18px;
+    
+}
+
+footer{
+    background-color: #120f22;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

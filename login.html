@@ -49,7 +49,7 @@
         transition: 0.5s;
     }
 
-    .bt{
+    .btn{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,9 +92,29 @@
         <input type="password" placeholder="Enter your password" /> <br />
       </div>
 
-      <div class="bt">
-        <button>Dăng nhập</button>
+      <div class="btn">
+        <button>Đăng nhập</button>
       </div>
     </div>
+  
+        <script src="auth.js"></script>
+        <script>
+          // short handler to authenticate using auth.js
+          const btn = document.getElementById('btnLogin');
+          btn.addEventListener('click', () => {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            const res = window.Auth.login(email, password);
+            if (!res.ok) {
+              alert(res.msg);
+              return;
+            }
+            // success — redirect to home (adjust as needed)
+            alert('Đăng nhập thành công, chào ' + (res.user.name || res.user.email));
+            window.location.href = 'index.html';
+          });
+        </script>
+        
+      
   </body>
 </html>
