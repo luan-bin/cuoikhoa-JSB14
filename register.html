@@ -26,7 +26,7 @@
         border-radius: 18px;
         width: 360px;
         box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-        animation: show 1.7s ease;
+        animation: show 0.6s ease;
     }
 
     @keyframes show {
@@ -51,23 +51,22 @@
         font-weight: bold;
     }
 
-    .btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .input-group input:focus {
         transform: scale(1.03);
         border-color: #4e54c8;
         box-shadow: 0 0 0 5px rgba(78,84,200,0.4);
     }
 
+    .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
     .btnLogin{
         width: 60%;
         border-radius: 10px;
         padding: 12px;
-        font-weight: bold;
         background: #4e54c8;
         color: white;
         border: none;
@@ -83,7 +82,7 @@
   </head>
 <body>
   <div class="login-box">
-    <h1>Đăng nhập</h1>
+    <h1>Đăng ký</h1>
 
     <div class="input-group">
       <input id="email" type="email" placeholder="Email" /><br />
@@ -93,11 +92,15 @@
         <input id="password" type="password" placeholder="Password" />
     </div>
 
-    <a href="index.html" class="btn">
-      <button class="btnLogin">Đăng nhập</button>
+    <div class="input-group">
+      <input id="confirm_password" type="password" placeholder="Confirm password" /><br />
+    </div>
+
+    <a href="login.html" class="btn">
+      <button class="btnLogin">Đăng ký</button>
     </a>
 
-    <a href="register.html">Đăng ký</a>
+    <a href="login.html">Đăng nhập</a>
   </div>
 
 </body>
