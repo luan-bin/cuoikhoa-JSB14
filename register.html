@@ -29,10 +29,16 @@
         animation: show 0.6s ease;
     }
 
-    @keyframes show {
-        from {opacity: 0; transform: translateY(20px);}
-        to   {opacity: 1; transform: translateY(0);}
+@keyframes show {
+    from {
+        opacity: 0;                 /* Ban đầu trong suốt */
+        transform: translateY(20px);/* Dịch xuống 20px */
     }
+    to {
+        opacity: 1;                 /* Hiện hoàn toàn */
+        transform: translateY(0);   /* Trở về vị trí gốc */
+    }
+}
 
 
     h1{
