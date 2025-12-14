@@ -10,42 +10,84 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">NetGame</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<!-- Navbar Bootstrap, nền tối, dính trên cùng -->
+
+    <div class="container">
+    <!-- Giới hạn chiều rộng nội dung -->
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            NetGame
+        </a>
+        <!-- Logo / tên website -->
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Thể Loại
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Nhập vai</a></li>
-                <li><a class="dropdown-item" href="#">Phiêu Lưu</a></li>
-                <li><a class="dropdown-item" href="#">Hành Động</a></li>
-                <li><a class="dropdown-item" href="#">Chiến thuật</a></li>
+        <!-- Nút toggle khi màn hình nhỏ -->
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Nội dung navbar sẽ thu gọn trên mobile -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Menu bên trái -->
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Trang chủ
+                    </a>
+                </li>
+                <!-- Trang chủ -->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <!-- Menu dropdown -->
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Nhập vai</a></li>
+                        <li><a class="dropdown-item" href="#">Phiêu lưu</a></li>
+                        <li><a class="dropdown-item" href="#">Hành động</a></li>
+                        <li><a class="dropdown-item" href="#">Chiến thuật</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Khuyến mãi
+                    </a>
+                </li>
+                <!-- Link phụ -->
+
             </ul>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true"></a>
-            </li>
-        </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+            <form class="d-flex" role="search">
+            <!-- Thanh tìm kiếm -->
+
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Search game..."
+                       aria-label="Search">
+
+                <button class="btn btn-outline-success" type="submit">
+                    Search
+                </button>
+            </form>
         </div>
     </div>
-    </nav>
+</nav>
+    <!-- Kết thúc navbar -->
 
     <div class="container py-5">
 

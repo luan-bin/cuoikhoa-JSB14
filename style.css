@@ -39,6 +39,13 @@
     border-radius: 18px;
 }
 
+.game-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 12px;
+}
+
 .tag {
     font-size: 11px;
     padding: 2px 8px;

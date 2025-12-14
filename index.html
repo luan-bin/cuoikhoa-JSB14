@@ -10,42 +10,84 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">NetGame</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<!-- Navbar Bootstrap, nền tối, dính trên cùng -->
+
+    <div class="container">
+    <!-- Giới hạn chiều rộng nội dung -->
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            NetGame
+        </a>
+        <!-- Logo / tên website -->
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Thể Loại
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Nhập vai</a></li>
-                <li><a class="dropdown-item" href="#">Phiêu Lưu</a></li>
-                <li><a class="dropdown-item" href="#">Hành Động</a></li>
-                <li><a class="dropdown-item" href="#">Chiến thuật</a></li>
+        <!-- Nút toggle khi màn hình nhỏ -->
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Nội dung navbar sẽ thu gọn trên mobile -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Menu bên trái -->
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Trang chủ
+                    </a>
+                </li>
+                <!-- Trang chủ -->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <!-- Menu dropdown -->
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Nhập vai</a></li>
+                        <li><a class="dropdown-item" href="#">Phiêu lưu</a></li>
+                        <li><a class="dropdown-item" href="#">Hành động</a></li>
+                        <li><a class="dropdown-item" href="#">Chiến thuật</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Khuyến mãi
+                    </a>
+                </li>
+                <!-- Link phụ -->
+
             </ul>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true"></a>
-            </li>
-        </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+            <form class="d-flex" role="search">
+            <!-- Thanh tìm kiếm -->
+
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Search game..."
+                       aria-label="Search">
+
+                <button class="btn btn-outline-success" type="submit">
+                    Search
+                </button>
+            </form>
         </div>
     </div>
-    </nav>
+</nav>
+    <!-- Kết thúc navbar -->
 
     <div class="title">
     <h2>Ưu Đãi Giáng Sinh </h2>
@@ -55,91 +97,71 @@
     <div class="san-pham">
 
         <a href="detail-1.html" class="game-card">
-        <img src="img/Europa-Universalis-V.jpg" class="game-img" alt="game">
-        
-        <div>
-            <strong class="text-dark" style="font-size: 15px;">
-            Europa Universalis V
-            </strong>
+            <img src="img/Europa-Universalis-V.jpg" class="game-img" alt="Europa Universalis V"><!-- Ảnh đại diện của game -->
 
-            <div>
-            <span class="tag">GAME</span>
-            <i></i>
-            </div>
+            <div class="game-info">
+                <strong class="game-title">Europa Universalis V</strong>
 
-            <div>
-            <div>
-                <span class="price-old">1.410.000 ₫</span>
-                <span class="price-new">69.000 ₫</span>
+                <div class="game-meta">
+                    <span class="tag">GAME</span>
+                </div>
+
+                <div class="game-price">
+                    <span class="price-old">1.410.000 ₫</span>
+                    <span class="price-new">69.000 ₫</span>
+                </div>
             </div>
-            </div>
-        </div>
         </a>
 
         <a href="detail-2.html" class="game-card">
-        <img src="img/battlefield-6.jpg" class="game-img" alt="game">
+            <img src="img/battlefield-6.jpg" class="game-img" alt=">Battlefield™ 6">
         
-        <div>
-            <strong class="text-dark" style="font-size: 15px;">
-            Battlefield™ 6
-            </strong>
+            <div class="game-info">
+                <strong class="game-title">Battlefield™ 6</strong>
 
-            <div>
-            <span class="tag">GAME</span>
-            <i></i>
-            </div>
+                <div>
+                    <span class="tag">GAME</span>
+                </div>
 
-            <div>
-            <div>
-                <span class="price-old">1.299.000 ₫</span>
-                <span class="price-new">299.000 ₫</span>
+                <div class="game-price">
+                    <span class="price-old">1.299.000 ₫</span>
+                    <span class="price-new">299.000 ₫</span>
+                </div>
             </div>
-            </div>
-        </div>
         </a>
 
         <a href="https://store.steampowered.com/app/3606480/Call_of_Duty_Black_Ops_7" class="game-card">
-            <img src="img/call_of_duty_black_ops_7.jpg" class="game-img" alt="game">
+            <img src="img/call_of_duty_black_ops_7.jpg" class="game-img" alt="Call of Duty®: Black Ops 7">
             
             <div class="mt-2 d-flex flex-column">
-                <strong class="text-dark" style="font-size: 15px;">
-                Call of Duty®: Black Ops 7
-                </strong>
+                <strong class="game-title">Call of Duty®: Black Ops 7</strong>
 
                 <div>
-                <span class="tag">GAME</span>
-                <i></i>
+                    <span class="tag">GAME</span>
                 </div>
 
-                <div>
-                <div>
+                <div class="game-price">
                     <span class="price-old">1.999.000 ₫</span>
                     <span class="price-new">199.000 ₫</span>
                 </div>
-                </div>
             </div>
         </a>
 
-            <a href="https://store.steampowered.com/app/2827710/Assassins_Creed_Shadows/" class="game-card">
-        <img src="img/Black-Myth-Wukong.jpg" class="game-img" alt="game">
-        
-        <div>
-            <strong class="text-dark" style="font-size: 15px;">
-            Black Myth: Wukong
-            </strong>
+        <a href="https://store.steampowered.com/app/2827710/Assassins_Creed_Shadows/" class="game-card">
+            <img src="img/Black-Myth-Wukong.jpg" class="game-img" alt="Black Myth: Wukong">
+            
+            <div>
+                <strong class="game-title">Black Myth: Wukong</strong>
 
-            <div>
-            <span class="tag">GAME</span>
-            <i></i>
-            </div>
+                <div>
+                    <span class="tag">GAME</span>
+                </div>
 
-            <div>
-            <div>
-                <span class="price-old">1.599.000 ₫</span>
-                <span class="price-new">199.000 ₫</span>
+                <div class="game-price">
+                    <span class="price-old">1.599.000 ₫</span>
+                    <span class="price-new">199.000 ₫</span>
+                </div>
             </div>
-            </div>
-        </div>
         </a>
     </div>
 

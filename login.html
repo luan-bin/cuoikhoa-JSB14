@@ -29,11 +29,16 @@
         animation: show 1.7s ease;
     }
 
-    @keyframes show {
-        from {opacity: 0; transform: translateY(20px);}
-        to   {opacity: 1; transform: translateY(0);}
+@keyframes show {
+    from {
+        opacity: 0;                 /* Ban đầu trong suốt */
+        transform: translateY(20px);/* Dịch xuống 20px */
     }
-
+    to {
+        opacity: 1;                 /* Hiện hoàn toàn */
+        transform: translateY(0);   /* Trở về vị trí gốc */
+    }
+}
 
     h1{
         text-align: center;
@@ -57,11 +62,11 @@
         align-items: center;
     }
 
-    .input-group input:focus {
-        transform: scale(1.03);
-        border-color: #4e54c8;
-        box-shadow: 0 0 0 5px rgba(78,84,200,0.4);
-    }
+.input-group input:focus {
+    transform: scale(1.03);                 /* Phóng to nhẹ khi focus */
+    border-color: #4e54c8;                  /* Đổi màu viền */
+    box-shadow: 0 0 0 5px rgba(78,84,200,.4);/* Vòng sáng bao quanh */
+}
 
     .btnLogin{
         width: 60%;
