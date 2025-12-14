@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetGame</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="detail.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<!-- Navbar Bootstrap, nền tối, dính trên cùng -->
+
+    <div class="container">
+    <!-- Giới hạn chiều rộng nội dung -->
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            NetGame
+        </a>
+        <!-- Logo / tên website -->
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nút toggle khi màn hình nhỏ -->
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Nội dung navbar sẽ thu gọn trên mobile -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Menu bên trái -->
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Trang chủ
+                    </a>
+                </li>
+                <!-- Trang chủ -->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Thể loại
+                    </a>
+                    <!-- Menu dropdown -->
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Nhập vai</a></li>
+                        <li><a class="dropdown-item" href="#">Phiêu lưu</a></li>
+                        <li><a class="dropdown-item" href="#">Hành động</a></li>
+                        <li><a class="dropdown-item" href="#">Chiến thuật</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Khuyến mãi
+                    </a>
+                </li>
+                <!-- Link phụ -->
+
+            </ul>
+
+            <form class="d-flex" role="search">
+            <!-- Thanh tìm kiếm -->
+
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Search game..."
+                       aria-label="Search">
+
+                <button class="btn btn-outline-success" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <!-- Kết thúc navbar -->
+
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <img src="img/black-myth-wukong.jpg"
+                     class="game-img" alt="Game">
+            </div> 
+
+            <div class="col-md-7">
+                <h2 class="name-game">Black Myth: Wukong</h2>
+
+                <div>
+                    <span class="tag">GAME</span>
+                    <span class="type">Nhập Vai</span>
+                    <span class="type">Hành Động</span>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-muted">
+                        Black Myth: Wukong là tựa game hành động nhập vai lấy cảm hứng từ Tây Du Ký,
+                        nơi bạn hóa thân thành Tôn Ngộ Không, chiến đấu với yêu quái, khám phá thế giới
+                        huyền ảo phương Đông và làm chủ lối đánh kỹ năng đậm chất Souls-like.
+                    </p>
+                </div>
+
+
+
+                <div>
+                    <span class="price-old">1.299.000 ₫</span>
+                    <span class="price-new">299.000 ₫</span>
+                </div>
+
+                <button class="btn btn-success btn-lg mt-4 px-5">
+                    Mua ngay
+                </button>
+            </div>
+
+        </div>
+
+        <!-- MÔ TẢ CHI TIẾT -->
+        <div class="mt-5 p-4 bg-white rounded shadow">
+            <h4 class="fw-bold mb-3">Mô tả chi tiết</h4>
+
+            <p style="line-height: 1.7;">
+                Black Myth: Wukong đưa người chơi vào một thế giới thần thoại Trung Hoa u ám,
+                lấy cảm hứng từ tác phẩm kinh điển Tây Du Ký.
+                Bạn sẽ nhập vai Tôn Ngộ Không, sử dụng gậy Như Ý, phép thuật biến hóa
+                và kỹ năng chiến đấu linh hoạt để đối đầu với những kẻ thù mạnh mẽ và boss khổng lồ.
+            </p>
+
+            <ul>
+                <li>Thể loại: Hành động – Nhập vai (Action RPG)</li>
+                <li>Lối chơi: Souls-like, chiến đấu kỹ năng cao</li>
+                <li>Nền tảng: PC / Console</li>
+                <li>Ngôn ngữ: Tiếng Anh, Tiếng Trung, v.v…</li>
+                <li>Ngày phát hành: 2024</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <footer>
+        © 2025 NetGame
+    </footer>
+
+
+</body>
+</html>
