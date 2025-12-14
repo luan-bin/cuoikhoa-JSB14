@@ -97,3 +97,81 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+
+/* ===== CAROUSEL ===== */
+
+#mainCarousel {
+    margin-bottom: 40px;
+}
+
+/* Ảnh carousel */
+#mainCarousel .carousel-item img {
+    height: 480px;
+    object-fit: cover;
+}
+
+/* Lớp phủ tối giúp chữ dễ đọc */
+#mainCarousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.2)
+    );
+    z-index: 1;
+}
+
+/* Caption */
+#mainCarousel .carousel-caption {
+    z-index: 2;
+    text-align: left;
+    bottom: 20%;
+}
+
+/* Tiêu đề game */
+#mainCarousel .carousel-caption h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+}
+
+/* Mô tả ngắn */
+#mainCarousel .carousel-caption p {
+    font-size: 16px;
+    max-width: 520px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Indicator (chấm tròn) */
+#mainCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Nút prev / next */
+#mainCarousel .carousel-control-prev-icon,
+#mainCarousel .carousel-control-next-icon {
+    filter: drop-shadow(0 0 6px rgba(0,0,0,0.8));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #mainCarousel .carousel-item img {
+        height: 300px;
+    }
+
+    #mainCarousel .carousel-caption {
+        bottom: 15%;
+    }
+
+    #mainCarousel .carousel-caption h3 {
+        font-size: 22px;
+    }
+
+    #mainCarousel .carousel-caption p {
+        font-size: 14px;
+    }
+}
